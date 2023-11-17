@@ -61,7 +61,7 @@ We went through the following steps in order to obtain our cleaned dataframes.
 
 #### clean_food
 
-We found a considerable amount of troll/ outlier recipes posted to the website which skewed our data (hot cocoa with 45,000 calories per serving). We wanted to make a separate dataframe that only included recipes and ignored these 'weird' recipes by using the following filters:
+We found a considerable amount of troll / outlier recipes posted to the website which skewed our data (hot cocoa with 45,000 calories per serving). We wanted to make a separate dataframe that only included recipes and ignored these 'weird' recipes by using the following filters:
 
 1. Could be made in under 5 hours (300 minutes)
 
@@ -105,7 +105,7 @@ Probably the most important relationship to plot for our question is that betwee
 
 There doesn't seem to be a very apparent correlation between calories and the amount of time it takes to make a dish. There is a large cluster focused around foods from 0 to 500 calories with prep times ranging from 0 to 100 minutes. An example of this subsection with one possible set of random data is provided below for your convenience:
 
-<iframe src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" width=800 height=600 frameBorder=0></iframe>
+<img src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" width=800 height=600 frameBorder=0></img>
 
  This leads us to believe there isn't much time to be saved by choosing to make high or low calorie meals as opposed to the other.
 
@@ -120,6 +120,22 @@ To examine further the increase in calories over the years, we constructed a box
 <iframe src="assets/calories_per_year.html" width=800 height=600 frameBorder=0></iframe>
 
 Notice how the median number of calories went up from ~287 calories to ~315 calories. Q3 jumped from 459 to 510. Seems , there is a shift to higher calorie foods being shared on food.com over the last decade.
+
+### Interesting Aggregates
+
+Things like staturated fats are known to raise blood cholesterol levels as well as increase risk of heart disease. We've already made many visual plots. Let's first examine how minutes effects all of our nutrition with a pivot table:
+
+'|   minutes |   carbohydrates (PDV) |   protein (PDV) |   saturated fat (PDV) |   sodium (PDV) |   sugar (PDV) |   total fat (PDV) |\n|----------:|----------------------:|----------------:|----------------------:|---------------:|--------------:|------------------:|\n|        30 |                     8 |            23   |                    20 |             15 |          19   |              20   |\n|        31 |                     8 |            16   |                    17 |             14 |          25   |              15   |\n|        32 |                     8 |            13   |                    20 |             13 |          26   |              18   |\n|        33 |                     9 |            13   |                    18 |             12 |          34.5 |              16.5 |\n|        34 |                    10 |            14.5 |                    18 |             13 |          34.5 |              18.5 |'
+
+
+Here's the data visualized:
+
+<iframe src="assets/median_nutrients_vs_minutes.html" width=800 height=600 frameBorder=0></iframe>
+
+Something that stands out is the height of successive peaks for a given nutrient. See how often the peaks are taller towards the higher minute values. Another cool thing to see is the synchronization between peaks for different nutrients. For example, places that have high values for sugar also have high values for things like saturated fats and total fat.
+
+## Assignment of Missingness
+
 
 
 
