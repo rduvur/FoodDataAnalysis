@@ -103,9 +103,9 @@ Probably the most important relationship to plot for our question is that betwee
 
 <iframe src="assets/calories_vs_minutes.html" width=800 height=600 frameBorder=0></iframe>
 
-There doesn't seem to be a very apparent correlation between calories and the amount of time it takes to make a dish. There is a large cluster focused around foods from 0 to 500 calories with prep times ranging from 0 to 100 minutes. An example of this subsection with one possible set of random data is provided below for your convenience:
+Just from looking at the plot, there doesn't seem to be a very apparent correlation between calories and the amount of time it takes to make a dish. We see a lot of points on the right that are very high in calories but barely take any time to make. There is a large cluster focused around foods from 0 to 500 calories with prep times ranging from 0 to 100 minutes. An example of this subsection with one possible set of random data is provided below for your convenience:
 
-<img src="Jekyll Website/FoodDataAnalysis/assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" alt="image" width="950" height="auto">
+<img src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" alt="image" width="950" height="auto">
 
 This leads us to believe there isn't much time to be saved by choosing to make high or low calorie meals as opposed to the other.
 
@@ -190,7 +190,6 @@ We created a new boolean column for our data frame called rating_missing. In our
 
 1. For our first test to verify dependence, we looked at minutes
 
-    #### Hypotheses
     **Null Hypothesis** : The distribution of 'minutes' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing
     **Alternative Hypothesis** : The distribution of 'minutes' when 'rating' is missing is not the same as the distribution of 'minutes' when 'rating' is not missing.
 
@@ -208,7 +207,6 @@ We created a new boolean column for our data frame called rating_missing. In our
 
 2. Our second test involves looking at the missingness of rating compared to the values of protein (PDV).
 
-    #### Hypotheses
     **Null Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing**
 
     **Alternative Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is not the same as the distribution of 'protein (PDV)' when 'rating' is not missing.**
