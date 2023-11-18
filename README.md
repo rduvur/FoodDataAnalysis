@@ -105,7 +105,7 @@ Probably the most important relationship to plot for our question is that betwee
 
 Just from looking at the plot, there doesn't seem to be a very apparent correlation between calories and the amount of time it takes to make a dish. We see a lot of points on the right that are very high in calories but barely take any time to make. There is a large cluster focused around foods from 0 to 500 calories with prep times ranging from 0 to 100 minutes. An example of this subsection with one possible set of random data is provided below for your convenience:
 
-<img src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" alt="image" width="950" height="auto">
+<img src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" alt="image" width="1500" height="auto">
 
 This leads us to believe there isn't much time to be saved by choosing to make high or low calorie meals as opposed to the other.
 
