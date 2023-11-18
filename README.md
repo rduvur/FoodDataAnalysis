@@ -174,9 +174,11 @@ The output is pasted below:
 From looking at the list of variables and the number of missing values, we see the most prevelent in the columns are description, rating, review, and avg_rating. For a value to be not missing at random (NMAR), the chance that it is missing depends on the actual missing value. To see if these elements are NMAR or MAR, we will conduct permutations to see if the missingness is dependent on the element itself or other elements in the data. 
 
 Description 
+
 The missingness of description could be due to the nature of the recipe and it's complexity. When a recipes is very simple, the contributer may feel that it is not necessary to put a description. Which could mean that this data is missing at random (MAR). To prove this, we could compare the recipes that have a shorter cook time and find the missingness for each and run permutations to see if this still holds.
 
 Rating
+
 When cleaning the data, we replaced all 0 values as np.nan. This means that there are a lot of people who didn't bother rating the recipe they posted a review for. The reasons for this could be that the recipe is so short that it isn't warranted.
 
 **We decided on conducting analysis of rating's missingness for this study**
@@ -206,9 +208,9 @@ We got a p-value of 0.119 for this test. This is greater than our siginificance 
 #### Hypotheses
 **Null Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing**
 
-**Alternative Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is not the same as the distribution of 'minutes' when 'rating' is not missing.**
+**Alternative Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is not the same as the distribution of 'protein (PDV)' when 'rating' is not missing.**
 
-Observed Statistics : The absolute difference between minutes means of these two distributions.
+Observed Statistics : The absolute difference between protein (PDV) means of these two distributions.
 
 This plot describes the distribution of protein in relation to rating's missingness
 
@@ -230,9 +232,9 @@ Back to our overarching question
 
 **Null: Recipes with low calories take the same amount of time to prepare as recipes with high calorie counts.**
 
-**Alternative: Recipes with low number of calories less time to prepare than high-calorie dishes.**
+**Alternative: Recipes with low number of calories take less time to prepare than high-calorie dishes.**
 
-We will use the clean data fram to conduct our test.
+We will use the clean data frame to conduct our test.
 
 is_low_cal: True if the dish has fewer than 400 calories. False if otherwise.
 
