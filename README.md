@@ -191,6 +191,7 @@ We created a new boolean column for our data frame called rating_missing. In our
 1. For our first test to verify dependence, we looked at minutes
 
     **Null Hypothesis** : The distribution of 'minutes' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing
+
     **Alternative Hypothesis** : The distribution of 'minutes' when 'rating' is missing is not the same as the distribution of 'minutes' when 'rating' is not missing.
 
     Observed Statistics : The absolute difference between minutes means of these two distributions.
@@ -207,9 +208,9 @@ We created a new boolean column for our data frame called rating_missing. In our
 
 2. Our second test involves looking at the missingness of rating compared to the values of protein (PDV).
 
-    **Null Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing**
+    **Null Hypothesis** : The distribution of 'protein (PDV)' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing
 
-    **Alternative Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is not the same as the distribution of 'protein (PDV)' when 'rating' is not missing.**
+    **Alternative Hypothesis** : The distribution of 'protein (PDV)' when 'rating' is missing is not the same as the distribution of 'protein (PDV)' when 'rating' is not missing.
 
     Observed Statistics : The absolute difference between protein (PDV) means of these two distributions.
 
