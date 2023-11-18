@@ -105,11 +105,11 @@ Probably the most important relationship to plot for our question is that betwee
 
 There doesn't seem to be a very apparent correlation between calories and the amount of time it takes to make a dish. There is a large cluster focused around foods from 0 to 500 calories with prep times ranging from 0 to 100 minutes. An example of this subsection with one possible set of random data is provided below for your convenience:
 
-<img src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" width=800 height=600 frameBorder=0></img>
+<img src="assets/Screen Shot 2023-11-15 at 12.27.33 AM.png" height=600 frameBorder=0></img>
 
- This leads us to believe there isn't much time to be saved by choosing to make high or low calorie meals as opposed to the other.
+This leads us to believe there isn't much time to be saved by choosing to make high or low calorie meals as opposed to the other.
 
- Studies showing the linkage between high-calorie diets and obesity have been mainstream for a while now. Let's examine whether this has had an effect on the recipes being posted to food.com by looking at the proportion of low-calorie recipes being posted each year. We'll define a low calorie food to be less than 400 calories. 
+Studies showing the linkage between high-calorie diets and obesity have been mainstream for a while now. Let's examine whether this has had an effect on the recipes being posted to food.com by looking at the proportion of low-calorie recipes being posted each year. We'll define a low calorie food to be less than 400 calories. 
 
 <iframe src="assets/low_cal_prop.html" width=800 height=600 frameBorder=0></iframe>
 
@@ -193,11 +193,11 @@ Observed Statistics : The absolute difference between minutes means of these two
 
 Here is the distribution plot for these two distributions: 
 
-<iframe src="assets/assets/rate_dist.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/rate_dist.html" width=800 height=600 frameBorder=0></iframe>
 
 After permuting the rating_missing column and getting a test stat 1,000 times, we arrive at the following plot of our data:
 
-<iframe src="assets/permuted_stat.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/permuted_statistic.html" width=800 height=600 frameBorder=0></iframe>
 
 We got a p-value of 0.119 for this test. This is greater than our siginificance level of 0.05. Therefore, we can reject the null and say that **the missingess of rating is dependent on the value in the minutes column.** Rating appears to MAR since it is dependent on minutes based on this test.
 
@@ -205,6 +205,7 @@ We got a p-value of 0.119 for this test. This is greater than our siginificance 
 
 #### Hypotheses
 **Null Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is the same as the distribution of 'minutes' when 'rating' is not missing**
+
 **Alternative Hypothesis : The distribution of 'protein (PDV)' when 'rating' is missing is not the same as the distribution of 'minutes' when 'rating' is not missing.**
 
 Observed Statistics : The absolute difference between minutes means of these two distributions.
@@ -248,7 +249,7 @@ Observed stat (-78.99738283601863)
 We got a p-val of 0.0. This means that under the conditions of the null (low vs high calorie distinction doesn't matter), it is incredibly unlikely we will ever see a case where low calorie meals take as long or longer than high calorie dishes. In this case, we **reject the null** and conclude that there may be an time incentive to eat healthy.
  
 
- ### Thank you
+### Thank you
 
 
 
